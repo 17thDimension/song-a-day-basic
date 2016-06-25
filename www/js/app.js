@@ -839,6 +839,14 @@ A simple example service that returns some data.
       } else {
         return ctrl.setNowPlaying(_.indexOf(ctrl.playlist, song));
       }
+      alert('s');
+      m = ctrl.playlist[index].media;
+      if (_(m.type).contains('video')) {
+        if (!ctrl.API.isFullScreen) {
+          ctrl.API.toggleFullScreen();
+        }
+      }
+
     };
     $rootScope.stop = function() {
       return ctrl.API.stop();
@@ -1736,10 +1744,10 @@ A simple example service that returns some data.
           }
         });
         notices.$loaded(function() {
-          song.$loaded(function(){
             if (song.artist.key == comment.author.key){
               return;
             }
+            if (song){} else{return;}
             notification.message = comment.author.alias + ' commented on your song ' + song.title;
             notification.link = song.$id;
             notification.author = comment.author;
@@ -1747,7 +1755,6 @@ A simple example service that returns some data.
 
             return comment = {};
 
-          })
         });
       },
       get: function(songId) {
