@@ -10,20 +10,19 @@
     <meta property="og:title" content="Song A Day">
     <meta property="og:type" content="website">
     <meta property="og:image" content="http://songadays.com/img/song-a-day.png">
-    <meta property="og:description" content="a Song a Day is fun to play">
+    <meta property="og:description" content="it's fun to play">
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="apple-touch-icon" href="img/favicon.png">
     <script>
       GLOBALS = {"ANGULAR_APP_NAME":"songaday","BUNDLE_NAME":"SongADay","BUNDLE_VERSION":"3.4.0","CODE_VERSION":"644ffa27f7be8fab1ff28049f23d4d33be155463","DEPLOY_TIME":1436240694370,"ENV":"development","ROLLBAR_SOURCEMAPS_URL_PREFIX":"https://songadays.com","WEINRE_ADDRESS":"192.168.1.17:31173"};
 
     </script>
-    <link rel='stylesheet' href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' />
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="cordova.js"></script>-->
+    <script src="js/jquery.min.js"></script>
     <script src="js/vendor.js?v=awesomesaucezzzz"></script>
     <script src="js/app_templates.js?v=awesomesauce"></script>
     <script src="js/app.js?v=awesomez"></script>
-    <link rel='stylesheet' href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' />
+    <link rel='stylesheet' href='css/firechat.min.css' />
   </head>
   <body ng-controller="AppCtrl as ctrl" ng-cloak>
     <videogular vg-player-ready="ctrl.onPlayerReady($API)" vg-complete="ctrl.next()" class="cinema">

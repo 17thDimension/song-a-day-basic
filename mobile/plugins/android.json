@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "paulwand.Song_A_Day"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "paulwand.Song_A_Day"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "paulwand.Song_A_Day"
+        },
+        "nl.kingsquare.cordova.background-audio": {
+            "PACKAGE_NAME": "paulwand.Song_A_Day"
+        }
+    },
+    "dependent_plugins": {}
+}
