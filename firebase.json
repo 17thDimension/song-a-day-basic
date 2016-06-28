@@ -1,6 +1,6 @@
 {
   "firebase": "song-a-day",
-  "public": "www",
+  "public": ".",
   "ignore": [
     "firebase.json",
     "**/.*",
